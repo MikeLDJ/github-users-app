@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import logo from './../../logo.svg';
+import logo from '../../logo.svg';
 
 export const Home = (): JSX.Element => (
   <div>
@@ -9,4 +9,4 @@ export const Home = (): JSX.Element => (
       <img src={logo} className="App-logo" alt="logo" />
     </header>
   </div>
-)
+);

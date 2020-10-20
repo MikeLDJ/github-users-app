@@ -9,7 +9,7 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended'
   ],
-  plugins: ['react', '@typescript-eslint', 'jest'],
+  plugins: ['react', 'jest'],
   env: {
     browser: true,
     es6: true,
@@ -30,6 +30,7 @@ module.exports = {
   },
   rules: {
     'linebreak-style': 'off',
+    'import/prefer-default-export': 0,
     'prettier/prettier': [
       'error',
       {

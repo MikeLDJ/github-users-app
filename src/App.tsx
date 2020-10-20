@@ -1,27 +1,27 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import { Home } from './components/Home/Home';
 import { Users } from './components/Users/Users';
 
 import './App.css';
 
-function App() {
+export function App(): JSX.Element {
   return (
     <Router>
       <div className="app-container">
         <nav>
           <ul>
             <li>
-              <Link className="App-link" to="/">Home</Link>
+              <Link className="App-link" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link className="App-link" to="/users">Browse Users</Link>
+              <Link className="App-link" to="/users">
+                Browse Users
+              </Link>
             </li>
           </ul>
         </nav>
@@ -37,5 +37,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
