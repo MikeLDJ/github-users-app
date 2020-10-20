@@ -3329,6 +3329,11 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+confusing-browser-globals@2.0.0-next.281+025f2739:
+  version "2.0.0-next.281"
+  resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-2.0.0-next.281.tgz#2ae43f05bffa16a24d02930cf841b074a3a4e3df"
+  integrity sha512-Lah3+jpqoLqS0B4fkvknPVGavxUe+CtAmMwY3S+VHyRhktmM/USnHpvOHL2QDqsGBCUbdApvPlxBgiLLzEFvbQ==
+
 confusing-browser-globals@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
@@ -4352,6 +4357,13 @@ eslint-config-prettier@^6.12.0:
   integrity sha512-LcT0i0LSmnzqK2t764pyIt7kKH2AuuqKRTtJTdddWxOiUja9HdG5GXBVF2gmCTvVYWVsTu8J2MhJLVGRh+pj8w==
   dependencies:
     get-stdin "^6.0.0"
+
+eslint-config-react-app@6.0.0-next.98:
+  version "6.0.0-next.98"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-6.0.0-next.98.tgz#ed526347a1c8bb4d46d67a26b57a9cc41f497e3b"
+  integrity sha512-mU2brgZVhgb4M/Efv4lChqclNRkwQ6bOHukcUAey2AtRC1ll0jA1qhK5kVkTQJ0yUxpUSv2ZOP5hu5Yz4dUJOw==
+  dependencies:
+    confusing-browser-globals "2.0.0-next.281+025f2739"
 
 eslint-config-react-app@^5.2.1:
   version "5.2.1"
