@@ -1,12 +1,13 @@
 import React from 'react';
 
-import logo from '../../logo.svg';
+import { EntranceButton } from './EntranceButton/EntranceButton';
+
+import { GithubLogoSvg } from '../SVGs/GithubLogoSvg';
 
 export const Home = (): JSX.Element => (
-  <div>
-    <header>
-      <h1>Github Users App</h1>
-      <img src={logo} className="App-logo" alt="logo" />
-    </header>
-  </div>
+  <header>
+    <GithubLogoSvg />
+    <EntranceButton />
+    <h1>Github Users App</h1>
+  </header>
 );

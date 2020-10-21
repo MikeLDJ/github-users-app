@@ -1,10 +1,9 @@
 import React from 'react';
-
-import logo from '../../logo.svg';
+import { Link } from 'react-router-dom';
 
 export const Users = (): JSX.Element => (
   <div>
     <h2>Users list</h2>
-    <img src={logo} className="App-logo" alt="logo" />
+    <Link to="/">Back to Home</Link>
   </div>
 );
