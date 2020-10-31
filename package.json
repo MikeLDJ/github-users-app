@@ -14,6 +14,7 @@
     "@types/react-router-dom": "^5.1.6",
     "@types/styled-components": "^5.1.4",
     "gh-pages": "^3.1.0",
+    "husky": "^4.3.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
@@ -27,9 +28,16 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn test:ci"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
