@@ -9,14 +9,14 @@ import { Users } from './components/Users/Users';
 import './App.css';
 
 const Container = styled.div`
-  background-color: #282c34;
+  background-color: #eee;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333;
 `;
 
 export function App(): JSX.Element {
