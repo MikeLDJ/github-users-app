@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { Home } from './components/Home/Home';
 import { Users } from './components/Users/Users';
@@ -21,7 +21,7 @@ const Container = styled.div`
 
 export function App(): JSX.Element {
   return (
-    <Router>
+    <BrowserRouter>
       <Container>
         <Switch>
           <Route path="/users">
@@ -32,6 +32,6 @@ export function App(): JSX.Element {
           </Route>
         </Switch>
       </Container>
-    </Router>
+    </BrowserRouter>
   );
 }
